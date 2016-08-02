@@ -24,13 +24,17 @@
     font-weight: 100;
     text-align: center;
     font-size: 30px;
+      margin: 0 auto;
+
 }
 
 #clockdiv > div{
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 1px;
     background: #00BF96;
     display: inline-block;
+      margin: 0 auto;
+
 }
 
 #clockdiv div > span{
@@ -38,6 +42,8 @@
     border-radius: 3px;
     background: #00816A;
     display: inline-block;
+      margin: 0 auto;
+
 }
 
 .smalltext{
@@ -134,8 +140,9 @@ a.button {
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="brand-heading" style="font-size:40px">Chitkara Open Source Community</h2>
                         <p class="intro-text">
-                        </p><h3>Registrations are about to be close</h3>
-<div id="clockdiv">
+                        </p><h3>Registrations are Closed. See you on 11<sup>th</sup> August</h3><br>
+                        <h4>Event starting in :</h4><br>
+<div id="clockdiv" class= "col-md-8 col-md-offset-2">
   <div>
     <span class="days"></span>
     <div class="smalltext">Days</div>
@@ -148,12 +155,12 @@ a.button {
     <span class="minutes"></span>
     <div class="smalltext">Minutes</div>
   </div>
-  <div>
+  <!-- <div>
     <span class="seconds"></span>
     <div class="smalltext">Seconds</div>
-  </div>
+  </div> -->
 </div><br>
-                       <a href="http://cosc.16mb.com/" class="button">Register</a>
+                       <!-- <a href="http://cosc.16mb.com/" class="button">Register</a> -->
                     </div>
                 </div>
             </div>
@@ -206,7 +213,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(2016, 07, 03, 00, 00, 00, 00) 
+var deadline = new Date("August 11, 2016 10:25:00") 
 initializeClock('clockdiv', deadline);
     </script>
     <!-- Plugin JavaScript -->
